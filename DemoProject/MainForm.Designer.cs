@@ -33,12 +33,16 @@ namespace DemoProject
             this.lblHelloWorld = new System.Windows.Forms.Label();
             this.btnCounter = new System.Windows.Forms.Button();
             this.lblCounter = new System.Windows.Forms.Label();
+            this.ColorChangeBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClickThis
             // 
             this.btnClickThis.BackColor = System.Drawing.Color.Green;
             this.btnClickThis.Location = new System.Drawing.Point(12, 60);
+            this.btnClickThis.Location = new System.Drawing.Point(16, 74);
+            this.btnClickThis.Margin = new System.Windows.Forms.Padding(4);
             this.btnClickThis.Name = "btnClickThis";
             this.btnClickThis.Size = new System.Drawing.Size(81, 25);
             this.btnClickThis.TabIndex = 0;
@@ -71,6 +75,24 @@ namespace DemoProject
             this.lblCounter.Name = "lblCounter";
             this.lblCounter.Size = new System.Drawing.Size(0, 13);
             this.lblCounter.TabIndex = 3;
+            // ColorChangeBtn
+            // 
+            this.ColorChangeBtn.Location = new System.Drawing.Point(16, 40);
+            this.ColorChangeBtn.Name = "ColorChangeBtn";
+            this.ColorChangeBtn.Size = new System.Drawing.Size(108, 27);
+            this.ColorChangeBtn.TabIndex = 2;
+            this.ColorChangeBtn.Text = "change Color";
+            this.ColorChangeBtn.UseVisualStyleBackColor = true;
+            this.ColorChangeBtn.Click += new System.EventHandler(this.ColorChangeBtn_Click);
+            // CloseBtn
+            // 
+            this.CloseBtn.Location = new System.Drawing.Point(337, 12);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(75, 23);
+            this.CloseBtn.TabIndex = 2;
+            this.CloseBtn.Text = "Close";
+            this.CloseBtn.UseVisualStyleBackColor = true;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // MainForm
             // 
@@ -81,6 +103,12 @@ namespace DemoProject
             this.Controls.Add(this.btnCounter);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
+            this.ClientSize = new System.Drawing.Size(433, 178);
+            this.Controls.Add(this.ColorChangeBtn);
+            this.Controls.Add(this.CloseBtn);
+            this.Controls.Add(this.lblHelloWorld);
+            this.Controls.Add(this.btnClickThis);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Git-Beispiel";
             this.ResumeLayout(false);
@@ -94,6 +122,8 @@ namespace DemoProject
         private System.Windows.Forms.Label lblHelloWorld;
         private System.Windows.Forms.Button btnCounter;
         private System.Windows.Forms.Label lblCounter;
+        private System.Windows.Forms.Button ColorChangeBtn;
+        private System.Windows.Forms.Button CloseBtn;
     }
 }
 

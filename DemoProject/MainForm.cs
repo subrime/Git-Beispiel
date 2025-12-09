@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +28,18 @@ namespace DemoProject
         {
             counter++;
             lblCounter.Text = counter.ToString();
+        }
+        
+        private void ColorChangeBtn_Click(object sender, EventArgs e)
+        {
+            var rnd = new Random();
+            Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
+            ColorChangeBtn.BackColor = randomColor;
+        }
+        
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
