@@ -28,5 +28,10 @@ namespace DemoProject
             Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             ColorChangeBtn.BackColor = randomColor;
         }
+        
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

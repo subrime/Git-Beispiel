@@ -32,6 +32,7 @@ namespace DemoProject
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
             this.ColorChangeBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClickThis
@@ -64,6 +65,15 @@ namespace DemoProject
             this.ColorChangeBtn.Text = "change Color";
             this.ColorChangeBtn.UseVisualStyleBackColor = true;
             this.ColorChangeBtn.Click += new System.EventHandler(this.ColorChangeBtn_Click);
+            // CloseBtn
+            // 
+            this.CloseBtn.Location = new System.Drawing.Point(337, 12);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(75, 23);
+            this.CloseBtn.TabIndex = 2;
+            this.CloseBtn.Text = "Close";
+            this.CloseBtn.UseVisualStyleBackColor = true;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // MainForm
             // 
@@ -71,6 +81,7 @@ namespace DemoProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 178);
             this.Controls.Add(this.ColorChangeBtn);
+            this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -86,6 +97,7 @@ namespace DemoProject
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
         private System.Windows.Forms.Button ColorChangeBtn;
+        private System.Windows.Forms.Button CloseBtn;
     }
 }
 
