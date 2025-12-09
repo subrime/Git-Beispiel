@@ -31,15 +31,16 @@ namespace DemoProject
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.btnCounter = new System.Windows.Forms.Button();
+            this.lblCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClickThis
             // 
             this.btnClickThis.BackColor = System.Drawing.Color.Green;
-            this.btnClickThis.Location = new System.Drawing.Point(16, 74);
-            this.btnClickThis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClickThis.Location = new System.Drawing.Point(12, 60);
             this.btnClickThis.Name = "btnClickThis";
-            this.btnClickThis.Size = new System.Drawing.Size(108, 31);
+            this.btnClickThis.Size = new System.Drawing.Size(81, 25);
             this.btnClickThis.TabIndex = 0;
             this.btnClickThis.Text = "Click this";
             this.btnClickThis.UseVisualStyleBackColor = false;
@@ -48,20 +49,38 @@ namespace DemoProject
             // lblHelloWorld
             // 
             this.lblHelloWorld.AutoSize = true;
-            this.lblHelloWorld.Location = new System.Drawing.Point(145, 81);
-            this.lblHelloWorld.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHelloWorld.Location = new System.Drawing.Point(109, 66);
             this.lblHelloWorld.Name = "lblHelloWorld";
-            this.lblHelloWorld.Size = new System.Drawing.Size(0, 16);
+            this.lblHelloWorld.Size = new System.Drawing.Size(0, 13);
             this.lblHelloWorld.TabIndex = 1;
+            // 
+            // btnCounter
+            // 
+            this.btnCounter.Location = new System.Drawing.Point(12, 92);
+            this.btnCounter.Name = "btnCounter";
+            this.btnCounter.Size = new System.Drawing.Size(75, 23);
+            this.btnCounter.TabIndex = 2;
+            this.btnCounter.Text = "add one";
+            this.btnCounter.UseVisualStyleBackColor = true;
+            this.btnCounter.Click += new System.EventHandler(this.btnCounter_Click);
+            // 
+            // lblCounter
+            // 
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.Location = new System.Drawing.Point(94, 101);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(0, 13);
+            this.lblCounter.TabIndex = 3;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 178);
+            this.ClientSize = new System.Drawing.Size(325, 145);
+            this.Controls.Add(this.lblCounter);
+            this.Controls.Add(this.btnCounter);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Git-Beispiel";
             this.ResumeLayout(false);
@@ -73,6 +92,8 @@ namespace DemoProject
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button btnCounter;
+        private System.Windows.Forms.Label lblCounter;
     }
 }
 

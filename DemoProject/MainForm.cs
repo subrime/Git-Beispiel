@@ -12,14 +12,22 @@ namespace DemoProject
 {
     public partial class MainForm : Form
     {
+        public int counter = 0;
         public MainForm()
         {
             InitializeComponent();
+            lblCounter.Text = counter.ToString();
         }
 
         private void btnClickThis_Click(object sender, EventArgs e)
         {
             lblHelloWorld.Text = "Hello World!";
+        }
+
+        private void btnCounter_Click(object sender, EventArgs e)
+        {
+            counter++;
+            lblCounter.Text = counter.ToString();
         }
     }
 }
